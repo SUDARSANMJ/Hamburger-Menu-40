@@ -1,4 +1,3 @@
-/* Write your CSS here */
 .nav-header {
   display: flex;
   justify-content: center;
@@ -53,7 +52,7 @@
   height: 100vh;
 }
 
-.model-container {
+.modal-container {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -63,7 +62,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .model-container {
+  .modal-container {
     max-width: 1110px;
   }
 }
@@ -79,7 +78,16 @@
   cursor: pointer;
 }
 
-.nav-link-list {
+.nav-links-list {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.nav-link-item {
   list-style-type: none;
 }
 

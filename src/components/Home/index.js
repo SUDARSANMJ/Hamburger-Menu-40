@@ -1,5 +1,5 @@
-// Write your code here
-import Header from './Header'
+import Header from '../Header'
+
 import './index.css'
 
 const Home = () => (
@@ -14,7 +14,7 @@ const Home = () => (
       <img
         className="desktop-home-image"
         src="https://assets.ccbp.in/frontend/react-js/home-lg-img.png"
-        alt="none"
+        alt="home"
       />
     </div>
   </div>

@@ -1,6 +1,5 @@
-// Write your code here
 import Popup from 'reactjs-popup'
-import {withRouter, link} from 'react-router-dom'
+import {withRouter, Link} from 'react-router-dom'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {IoMdClose} from 'react-icons/io'
 import {AiFillHome} from 'react-icons/ai'
@@ -19,10 +18,10 @@ const Header = () => (
         />
       </Link>
       <Popup
-        model
+        modal
         trigger={
           <button
-            className="hamburger-icon"
+            className="hamburger-icon-button"
             type="button"
             data-testid="hamburgerIconButton"
           >
@@ -32,7 +31,7 @@ const Header = () => (
         className="popup-content"
       >
         {close => (
-          <div className="model-container">
+          <div className="modal-container">
             <button
               className="close-button"
               type="button"
@@ -49,7 +48,7 @@ const Header = () => (
                 </Link>
               </li>
               <li className="nav-link-item">
-                <Link className="nav-link" to="/about" onClick={() => close}>
+                <Link className="nav-link" to="/about" onClick={() => close()}>
                   <BsInfoCircleFill size="32" />
                   <p className="nav-link-content">About</p>
                 </Link>
@@ -61,4 +60,5 @@ const Header = () => (
     </div>
   </div>
 )
+
 export default withRouter(Header)
